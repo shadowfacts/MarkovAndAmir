@@ -1,0 +1,28 @@
+buildscript {
+	repositories {
+		jcenter()
+	}
+	dependencies {
+		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.3"
+	}
+}
+
+plugins {
+	id "idea"
+}
+
+apply plugin: "kotlin"
+
+version = "0.1.0"
+group = "net.shadowfacts"
+archivesBaseName = "MarkovAndAmir"
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+	compile "org.jetbrains.kotlin:kotlin-stdlib:1.0.3"
+	compile "org.jetbrains.kotlin:kotlin-reflect:1.0.3"
+	compile "org.jetbrains.kotlin:kotlin-runtime:1.0.3"
+}
